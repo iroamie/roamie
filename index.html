@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roamie - Travel Planner</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Roamie Logo" class="logo">
+        <h1>Roamie</h1>
+        <p>Travel together, smarter.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to Roamie</h2>
+            <p>Roamie helps you and your friends find the best travel destinations and plan your trips together. Enter your details below to get started!</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Plan Your Trip</h2>
+            <form id="travel-form" method="POST" action="results.html">
+                <label for="group-size">Number of People in Group:</label>
+                <input type="number" id="group-size" name="group-size" required>
+
+                <div id="group-details"></div>
+
+                <button type="button" onclick="addGroupDetails()">Add Group Details</button>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>If you're interested in investing or want to learn more, contact us at:</p>
+            <ul>
+                <li>Buğra Aydemir - bugraaydemir34@gmail.com</li>
+                <li>Halit Kabasakal - halitkabasakal48@gmail.com</li>
+                <li>Aras Şahin - aras_sahin@hotmail.com</li>
+                <li>İrem Karaarslan - iremka2000@gmail.com</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
